@@ -18,7 +18,7 @@ use AnonWallet\AnonWallet_micro;
 
 $api_key = 'Your merchant API Key';
 
-$obj = new AnonWallet($api_key);
+$obj = new AnonWallet_micro($api_key);
 ```
 
 ## Get Balance of specific coin
