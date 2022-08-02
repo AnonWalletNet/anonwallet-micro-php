@@ -1,4 +1,4 @@
-﻿# anonwallet-php
+﻿# anonwallet-micro-php
 
 Official PHP SDK of AnonWallet.Net Anonymous Cryptocurrency Payment Gateway for sending Micro Transactions
 
@@ -16,7 +16,7 @@ Include namespace of package wherever you want to use this library
 include_once './vendor/autoload.php';
 use AnonWallet\AnonWallet_micro;
 
-$api_key = 'Your merchant API Key';
+$api_key = 'Your Micro Payments/Faucet API Key';
 
 $obj = new AnonWallet_micro($api_key);
 ```
@@ -50,7 +50,7 @@ $address = $obj->check_address($currency, $address);
 ```
 $currency = 'BTC'; //If currency parameter is not specified, default currency is BTC
 $amount = '0.01'; // Numeric double amount to be send from your account
-$address = '1Btcdemowithdrawaladdress'; //The receiver address
+$address = '1Btcdemowithdrawaladdress'; //The receiver linked address from AnonWallet system
 
 $send = $obj->send($currency, $amount, $address);
 ```
