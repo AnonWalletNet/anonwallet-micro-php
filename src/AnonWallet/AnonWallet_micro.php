@@ -111,7 +111,7 @@ class AnonWallet_micro {
             'address'=>$address
         ];
 
-        $res = $this->call($url, $payload);
+        $res = $this->curl_call($url, $payload);
         return $res;
     }
 
